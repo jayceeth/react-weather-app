@@ -1,0 +1,10 @@
+.SearchEngine #city-input {
+  position: relative;
+  left: 370px;
+  top: -260px;
+}
+.SearchEngine #submit-button {
+  position: relative;
+  left: 340px;
+  top: -260px;
+}
