@@ -13,10 +13,10 @@ export default function SearchEngine() {
               placeholder="Enter a city"
               className="form-control"
               id="city-input"
-              autocomplete="off"
+              autoComplete="off"
             />
           </div>
-          <div class="col-sm-2">
+          <div className="col-sm-2">
             <input
               type="submit"
               value="Search"

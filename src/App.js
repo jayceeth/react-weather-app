@@ -6,10 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className = "container">
-        <p>
           <Weather />
           <SearchEngine />
-        </p>
        </div>
     </div>
   );
