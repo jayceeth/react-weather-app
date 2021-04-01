@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-
+import SearchEngine from "./SearchEngine";
 import CurrentWeather from "./CurrentWeather";
 import "./Weather.css"
 
@@ -20,6 +20,7 @@ export default function Weather(){
     }
     if (weatherData.ready){
         return (
+                <SearchEngine />,
                 <CurrentWeather data={weatherData}/>
             )
     } else{
