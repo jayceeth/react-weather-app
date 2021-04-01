@@ -1,7 +1,7 @@
 .Weather ul {
   list-style: none;
   padding: 0;
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(94, 94, 94);
 }
 
@@ -12,8 +12,10 @@ ul {
   left: 55px;
   top: 40px;
 }
-.Weather span {
-  font-size: 40px;
+
+.Weather span,
+h1 {
+  font-size: 32px;
 }
 .Weather .WeatherCondition {
   margin-top: 40px;

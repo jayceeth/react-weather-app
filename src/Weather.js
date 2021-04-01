@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
-import FormatDate from "./FormatDate";
+
+import CurrentWeather from "./CurrentWeather";
 import "./Weather.css"
 
 export default function Weather(){
@@ -19,21 +20,7 @@ export default function Weather(){
     }
     if (weatherData.ready){
         return (
-                <div className = "Weather">
-                    <h1>{weatherData.city}</h1>
-                        <ul>
-                            <li>Last Updated: <FormatDate date={weatherData.date} /></li>
-                            <li className="text-capitalize">{weatherData.description}</li>
-                        </ul>
-                            <span role="img" aria-label="sunny" className="temperature">
-                                ☀️{weatherData.temperature}°F
-                            </span>
-                        <br />
-                        <ul className="WeatherCondition">
-                            <li className="humidity">Humidity: {weatherData.humidity}%</li>
-                            <li className="wind">Wind: {weatherData.wind} mph</li>
-                        </ul>
-                </div>
+                <CurrentWeather data={weatherData}/>
             )
     } else{
         let city = "San Francisco";
