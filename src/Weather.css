@@ -6,7 +6,6 @@
 }
 
 .Weather h1,
-span,
 ul {
   position: relative;
   left: 55px;
@@ -15,8 +14,32 @@ ul {
 
 .Weather span,
 h1 {
-  font-size: 32px;
+  font-size: 30px;
 }
+
+.Weather input {
+  position: relative;
+  left: 310px;
+  top: 77px;
+}
+
+.Weather span {
+  top: -200px;
+}
+
+.Weather img {
+  position: relative;
+  left: 40px;
+  top: 15px;
+}
+
 .Weather .WeatherCondition {
-  margin-top: 40px;
+  margin-top: 15px;
+  top: -50px;
+}
+
+.Weather .Temperature {
+  position: relative;
+  top: -55px;
+  left: 135px;
 }

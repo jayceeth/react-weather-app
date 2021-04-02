@@ -1,6 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 
+
 export default function CurrentWeather(props){
     return(
         <div className = "Weather">
@@ -9,8 +10,14 @@ export default function CurrentWeather(props){
                             <li>Last Updated: <FormatDate date={props.data.date} /></li>
                             <li className="text-capitalize">{props.data.description}</li>
                         </ul>
-                            <span role="img" aria-label="sunny" className="temperature">
-                                ☀️{props.data.temperature}°F
+                            <div className="icon">
+                                <img
+                                src={props.data.icon}
+                                alt={props.data.description}
+                                />
+                            </div>
+                            <span className="Temperature">
+                                {props.data.temperature}°F
                             </span>
                         <br />
                         <ul className="WeatherCondition">
