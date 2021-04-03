@@ -33,13 +33,21 @@ h1 {
   top: 15px;
 }
 
-.Weather .WeatherCondition {
-  margin-top: 15px;
-  top: -50px;
+.Weather .unit {
+  position: relative;
+  top: -64px;
+  left: 140px;
+  font-size: 18px;
 }
 
-.Weather .Temperature {
+.Weather .WeatherCondition {
+  margin-top: 15px;
+  top: -65px;
+}
+
+.Weather .temperature {
   position: relative;
   top: -55px;
   left: 135px;
+  font-size: 30px;
 }

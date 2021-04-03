@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import CurrentTemperature from "./CurrentTemperature";
 
 
 export default function CurrentWeather(props){
@@ -7,7 +8,7 @@ export default function CurrentWeather(props){
         <div className = "Weather">
                     <h1>{props.data.city}</h1>
                         <ul>
-                            <li>Last Updated: <FormatDate date={props.data.date} /></li>
+                            <li><FormatDate date={props.data.date} /></li>
                             <li className="text-capitalize">{props.data.description}</li>
                         </ul>
                             <div className="icon">
@@ -16,9 +17,7 @@ export default function CurrentWeather(props){
                                 alt={props.data.description}
                                 />
                             </div>
-                            <span className="Temperature">
-                                {props.data.temperature}°F
-                            </span>
+                            <CurrentTemperature imperial={props.data.temperature} className="Temperature"/>
                         <br />
                         <ul className="WeatherCondition">
                             <li className="humidity">Humidity: {props.data.humidity}%</li>
