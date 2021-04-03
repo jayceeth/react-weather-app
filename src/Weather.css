@@ -51,3 +51,7 @@ h1 {
   left: 135px;
   font-size: 30px;
 }
+.Weather .searchButton {
+  position: relative;
+  left: -35px;
+}
